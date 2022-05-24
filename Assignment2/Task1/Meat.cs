@@ -22,7 +22,7 @@ namespace Assignment2
         public override void ChangePrice(double changePercent = 0)
         {
             if (changePercent != 0)
-            {
+            {//Наrd Code
                 double changePercentPerType = 0;
                 switch (_type)
                 {
