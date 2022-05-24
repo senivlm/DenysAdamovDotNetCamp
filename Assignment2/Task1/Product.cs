@@ -63,7 +63,7 @@ namespace Assignment2
         }
         public override string ToString()
         {
-            return $"{Title, 10} | {Price, 10} | {Weight, 10}";
+            return $"{Title,10} | {Price,10:C2} | {Weight,10}";
         }
     }
 }
