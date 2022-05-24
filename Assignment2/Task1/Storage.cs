@@ -9,12 +9,14 @@ namespace Assignment2
     internal class Storage
     {
         private Product[] _products;
+       
         public Storage() : this(default)
         { }
         public Storage(params Product[] products)
         {
             Fill();
         }
+        //Порушення інкапсуляції
         public Product[] Products
         {
             private set => Fill();
@@ -40,7 +42,7 @@ namespace Assignment2
         }
 
         public void FillInByHand()
-        {
+        {// Прив'язка до консолі
             Console.WriteLine("Set the number of products to add:");
             int numberOfProducts;
             int.TryParse(Console.ReadLine(), out numberOfProducts);
@@ -125,6 +127,7 @@ namespace Assignment2
                 _products = products;
             }
         }
+        //метод, який не має бути в цьому класі
         public void PrintDetails()
         {
             Console.WriteLine("Total price = " + TotalPrice + " | Total weight = " + TotalWeight);
