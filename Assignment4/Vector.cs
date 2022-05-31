@@ -113,6 +113,7 @@ namespace Assignment4
         public void ReverseCustom()
         {
             int[] reversedArray = new int[array.Length];
+            // Треба без допоміжного масиву
             for (int i = 0; i < array.Length; i++)
             {
                 reversedArray[i] = array[array.Length - 1 - i];
