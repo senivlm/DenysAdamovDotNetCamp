@@ -1,6 +1,6 @@
 ﻿
 namespace Assignment4
-{
+{//Ваш номер 35
     internal class Vector
     {
         private int[] array;
@@ -247,6 +247,7 @@ namespace Assignment4
             int temp = array[end];
             array[end] = array[pivotIndex];
             array[pivotIndex] = temp;
+            // Ви викликаєте метод, у якому змінюєте опорний елемент. Тому передане значення ні на що не впливає!
             QuickSort(start, end);
         }
         private int Partition(int start, int end)
