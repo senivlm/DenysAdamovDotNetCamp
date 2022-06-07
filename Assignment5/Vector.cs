@@ -344,7 +344,7 @@ namespace Assignment5
         /// Simulation of output file
         /// </param>
         public void MergeSortHalfLength(int[] inputData, ref int[] outputData)
-        {
+        {// одночасно завантажувати 2 масиви не можна. Не вистачає оперативки. Треба окремо посортувати. Я на занятті покажу. 
             int[] dataLeftHalf = new int[inputData.Length / 2];
             int[] dataRightHalf = new int[inputData.Length - dataLeftHalf.Length];
 
